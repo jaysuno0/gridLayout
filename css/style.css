@@ -1,0 +1,76 @@
+/****** PRESETS ******/
+@font-face{
+    src: url(../fonts/Lato-Regular.ttf);
+    font-family: lato;
+}
+
+:root{
+    --bright-font-color: #333;
+    --dim-font-color: #666;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 20px;
+    font-family: lato, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+/****** HEADER ******/
+header {
+    min-height: 100vh;
+
+    background-image: url(../img/header/header-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav{
+    color: var(--bright-font-color);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    padding: 1em;
+    margin: 0 1em;
+    position: relative;
+}
+nav ul li::before{
+    content: " ";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 10%;
+    transition: width 300ms;
+}
+nav ul li:hover::before{
+    width: 100%;
+    border: 1px solid var(--bright-font-color);
+}
+nav ul li:nth-child(3)::before{
+    display: none;
+}
+nav img{
+    width: 5em;
+    height: auto;
+}
