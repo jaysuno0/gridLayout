@@ -156,3 +156,44 @@ nav img{
     background-color: #fff;
     transform: translateY(50%) rotate(45deg);
 }
+
+
+/****** After MAIN ******/
+/* twitter */
+#twitter{
+    width: 70%;
+    margin: 0 auto;
+    padding: 5em 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#twitter svg{
+    max-width: 3em;
+    fill: dodgerblue;
+}
+#twitter .title{
+    margin: 2em;
+    font-weight: bold;
+}
+
+.counter-points-wrapper{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter-point{
+    margin: 0 .2em;
+    width: 12px;
+    height: 12px;
+
+    border: 2px solid var(--dim-font-color);
+    border-radius: 50px;
+}
+.counter-point.active{
+    background-color: var(--dim-font-color);
+}
