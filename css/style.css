@@ -197,3 +197,38 @@ nav img{
 .counter-point.active{
     background-color: var(--dim-font-color);
 }
+
+
+/* shop */
+#shop .gallery{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#shop img{
+    width: 100%;
+    height: 100%;
+}
+#shop .vertical-img{
+    grid-area: span 2 / span 1;
+}
+#shop .horisontal-img{
+    grid-area: span 1 / span 2;
+}
+
+.shop-btn-wrapper{
+    background-color: rgb(41, 48, 58);
+    text-align: center;
+}
+.shop-btn{
+    display: inline-block;
+    padding: 1em 5em;
+    margin: 3em auto;
+
+    background-color: rgb(41, 48, 58);
+    color: #fff;
+    border: 1px solid;
+    transition: background-color 150ms;
+}
+.shop-btn:hover{
+    background-color: rgb(65, 76, 92);
+}
