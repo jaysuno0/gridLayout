@@ -6,7 +6,7 @@
 
 :root{
     --bright-font-color: #333;
-    --dim-font-color: #666;
+    --dim-font-color: #777;
 }
 
 *{
@@ -24,7 +24,7 @@ html{
 h2{
     font-size: 1.1rem;
     letter-spacing: 3px;
-    margin: 1.5em 0;
+    margin: .5em 0;
 }
 
 a{
@@ -37,8 +37,9 @@ ul{
 }
 
 .icon{
-    width: 3em;
+    max-width: 3em;
     margin-bottom: 1em;
+    max-height: 3em;
 }
 
 .text{
@@ -107,6 +108,51 @@ nav img{
 }
 #about p{
     width: 70%;
+    margin-top: 1em;
     text-align: center;
     color: var(--dim-font-color);
+}
+
+
+/* work */
+.work-aspect{
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: repeat(6, 1fr);
+}
+.work-aspect img:not(.icon){
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.work-aspect .horisontal-img{
+    grid-column: span 4;
+}
+.work-aspect .vertical-img{
+    grid-column: span 2;
+}
+
+.text-container{
+    padding-top: 3em;
+    grid-column: span 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-container .text{
+    padding: 1em 3em 2em 3em;
+}
+.text-container hr{
+    width: 20%;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+.text-container .square {
+    width: 1em;
+    height: 1em;
+
+    background-color: #fff;
+    transform: translateY(50%) rotate(45deg);
 }
