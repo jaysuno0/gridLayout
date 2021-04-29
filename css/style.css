@@ -157,7 +157,7 @@ nav img{
 }
 
 
-/* shop */
+/****** After MAIN ******/
 /* twitter */
 #twitter{
     width: 70%;
@@ -237,7 +237,6 @@ nav img{
 }
 #contact input{
     font-size: 1rem;
-    border: 1.5px solid var(--dim-font-color);
     padding: .9em;
 }
 
@@ -255,50 +254,4 @@ nav img{
 
 #contact button:hover{
     background-color: rgb(49, 110, 87);
-}
-
-
-/****** FOOTER ******/
-footer{
-    position: relative;
-    padding: 5em 3em;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-footer .socials-wrapper{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-footer svg{
-    width: 2em;
-    margin: 0 .2em;
-    transition: transform 150ms;
-}
-footer svg:hover{
-    transform: rotateZ(15deg);
-}
-
-footer a:first-child svg{
-    fill: dodgerblue;
-}
-footer a:nth-child(2) svg{
-    fill: rgb(42, 81, 153);
-}
-footer a:last-child svg{
-    fill: red;
-}
-
-footer .to-top-btn{
-    color: var(--dim-font-color);
-    border-bottom: 2px solid transparent;
-    transition: border 150ms;
-}
-
-footer .to-top-btn:hover{
-    border-color: var(--dim-font-color);
 }
