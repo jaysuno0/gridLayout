@@ -16,6 +16,7 @@
         <meta property="og:image" content="https://st4.cannypic.com/thumbs/40/402613_632_canny_pic.jpg">
         <meta property="og:description" content="Пример вёрстки веб-страницы с использованием CSS GRID">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/queries.css">
     </head>
     <body>
         <header id="header">
@@ -23,7 +24,7 @@
                 <ul class="flex-horisontal">
                     <li><a href="#about">ABOUT US</a></li>
                     <li><a href="#work">WORK</a></li>
-                    <li><a href="https://jaysuno0.github.io/gridLayout/"><img src="img/logo/logo-main.png" alt="company logo"></a></li>
+                    <li class="logo"><a href="https://jaysuno0.github.io/gridLayout/"><img src="img/logo/logo-main.png" alt="company logo"></a></li>
                     <li><a href="#shop">SHOP</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
@@ -100,14 +101,14 @@
         </section>
         <section id="shop">
             <div class="gallery">
-                <img class="small-img" src="img/shop/shop-small-1.png" alt="bike photo">
-                <img class="small-img" src="img/shop/shop-small-2.png" alt="bike photo">
-                <img class="vertical-img" src="img/shop/shop-vertical-1.png" alt="bike photo">
-                <img class="vertical-img" src="img/shop/shop-vertical-2.png" alt="bike photo">
-                <img class="horisontal-img" src="img/shop/shop-horisontal-2.png" alt="bike photo">
-                <img class="horisontal-img" src="img/shop/shop-horisontal-1.png" alt="bike photo">
-                <img class="small-img" src="img/shop/shop-small-3.png" alt="bike photo">
-                <img class="small-img" src="img/shop/shop-small-4.png" alt="bike photo">
+                <img class="small-img s1" src="img/shop/shop-small-1.png" alt="bike photo">
+                <img class="small-img s2" src="img/shop/shop-small-2.png" alt="bike photo">
+                <img class="vertical-img v1" src="img/shop/shop-vertical-1.png" alt="bike photo">
+                <img class="vertical-img v2" src="img/shop/shop-vertical-2.png" alt="bike photo">
+                <img class="horisontal-img h1" src="img/shop/shop-horisontal-2.png" alt="bike photo">
+                <img class="horisontal-img h2" src="img/shop/shop-horisontal-1.png" alt="bike photo">
+                <img class="small-img s3" src="img/shop/shop-small-3.png" alt="bike photo">
+                <img class="small-img s4" src="img/shop/shop-small-4.png" alt="bike photo">
             </div>
             <div class="shop-btn-wrapper">
                 <a class="shop-btn" href="https://vk.com/id58913402" target="_blank">DISCOVER THE SHOP</a>
@@ -122,7 +123,7 @@
             </form>
         </section>
         <footer>
-            <div class="text">
+            <div class="info text">
                 <p><b>AOD New Yourk</b></p>
                 <p>2250 Lexington Avenue</p>
                 <p>New Yourk, NY10035 - info@domain.com</p>

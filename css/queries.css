@@ -1,0 +1,168 @@
+@media all and (max-width: 1200px){
+  nav ul li{
+      margin: 0 .5em;
+
+  }
+
+  .work-aspect .text-container .text{
+      padding: 1em 2em 2em 2em;
+  }
+  .work-aspect .text-container h2{
+    margin: 0 1em;
+  }
+
+  #contact input{
+    width: 35%;
+  }
+
+  footer{
+    padding: 7em 4em;
+  }
+}
+
+
+
+@media all and (max-width: 900px){
+  nav ul li{
+      margin: 0;
+  }
+
+  #about{
+    background-color: #fff9f9;
+  }
+
+  .work-aspect{
+      grid-template-columns: 1fr;
+  }
+  .work-aspect .text-container .text{
+      padding: 1em 3em 2em 3em;
+  }
+  .work-aspect img:not(.icon){
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+  }
+  .work-aspect .horisontal-img{
+      display: none;
+  }
+  .work-aspect .vertical-img{
+      display: none;
+  }
+
+  #contact input{
+    width: 45%;
+  }
+
+  footer .info{
+    max-width: 30%;
+  }
+}
+
+
+
+@media all and (max-width: 700px){
+    nav ul{
+      flex-direction: column;
+    }
+    nav ul li{
+      width: 50%;
+      text-align: center;
+      color: #fff;
+      background-color: #333b;
+    }
+    nav .logo{
+      order: -1;
+    }
+    nav ul li::before{
+      display: none;
+    }
+    nav ul li:hover{
+      background-color: #888d;
+    }
+
+    #shop .gallery{
+        grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+        grid-template-areas:
+          "s1 s2 v1"
+          "h1 h1 v1"
+          "v2 h2 h2"
+          "v2 s3 s4";
+    }
+
+    #shop .s1{
+      grid-area: s1;
+    }
+    #shop .s2{
+      grid-area: s2;
+    }
+    #shop .s3{
+      grid-area: s3;
+    }
+    #shop .s4{
+      grid-area: s4;
+    }
+    #shop .v1{
+      grid-area: v1;
+    }
+    #shop .v2{
+      grid-area: v2;
+    }
+    #shop .h1{
+      grid-area: h2;
+    }
+    #shop .h2{
+      grid-area: h1;
+    }
+
+    .shop-btn{
+        padding: .8em 3em;
+    }
+
+    #contact input{
+      width: 55%;
+    }
+
+    footer{
+      padding: 3em 1em;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    footer .info{
+      max-width: 100%;
+      order: 2;
+    }
+    footer .socials-wrapper{
+      position: static;
+      transform: translate(0,0);
+      margin: 2em 0;
+      order: 1;
+    }
+}
+
+@media all and (max-width: 400px){
+  nav ul li{
+    width: 70%;
+  }
+
+  #about p{
+      width: 85%;
+  }
+
+  .work-aspect .text-container .text{
+      padding: 1em;
+      padding-bottom: 2em;
+  }
+
+  #twitter{
+      width: 85%;
+  }
+
+  .shop-btn{
+      padding: .5em 1em;
+  }
+}
