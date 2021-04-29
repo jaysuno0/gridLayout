@@ -47,6 +47,21 @@ ul{
     color: var(--dim-font-color);
 }
 
+/* flex-presets */
+.flex-horisontal{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex-vertical{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /****** HEADER ******/
 header {
@@ -62,11 +77,6 @@ nav{
     color: var(--bright-font-color);
     font-weight: bold;
     letter-spacing: 3px;
-}
-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 nav ul li{
     padding: 1em;
@@ -101,10 +111,6 @@ nav img{
 /* about */
 #about{
     padding: 7em 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #about p{
     width: 70%;
@@ -124,6 +130,7 @@ nav img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 .work-aspect .horisontal-img{
     grid-column: span 4;
@@ -135,11 +142,7 @@ nav img{
 .text-container{
     padding-top: 3em;
     grid-column: span 2;
-
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 .text-container .text{
     padding: 1em 3em 2em 3em;
@@ -150,11 +153,14 @@ nav img{
     margin-bottom: 2em;
 }
 .text-container .square {
-    width: 1em;
-    height: 1em;
+    width: 20px;
+    height: 20px;
 
     background-color: #fff;
     transform: translateY(50%) rotate(45deg);
+}
+.text-container img{
+  height: auto;
 }
 
 
@@ -164,12 +170,6 @@ nav img{
     width: 70%;
     margin: 0 auto;
     padding: 5em 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 #twitter svg{
     max-width: 3em;
@@ -182,9 +182,6 @@ nav img{
 
 .counter-points-wrapper{
     margin-top: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .counter-point{
     margin: 0 .2em;
@@ -231,4 +228,85 @@ nav img{
 }
 .shop-btn:hover{
     background-color: rgb(65, 76, 92);
+}
+
+/* contact */
+#contact{
+  padding: 5em 0;
+}
+#contact .text{
+  font-style: italic;
+  margin: 2em 0;
+}
+#contact form{
+  width: 100%;
+}
+#contact input{
+  font-size: 1rem;
+  width: 25%;
+  padding: .6em;
+  font-style: italic;
+}
+#contact button{
+  font-size: 1rem;
+  margin-left: .5em;
+  padding: .7em 1.5em;
+
+  border: none;
+  color: #fff;
+  background-color: #3c9;
+  cursor: pointer;
+  transition: background-color 170ms;
+}
+#contact button:hover{
+  background-color: #196;
+}
+
+/****** FOOTER ******/
+footer{
+  position: relative;
+  font-size: .7rem;
+  padding: 7em;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fff9f9;
+}
+footer .socials-wrapper{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+footer svg{
+  width: 2.2em;
+  height: 2.2em;
+  margin: 0 .3em;
+}
+
+footer a svg{
+  transition: transform 200ms;
+}
+footer a svg:hover{
+  transform: rotateZ(15deg);
+}
+footer a:first-child svg{
+  fill: dodgerblue;
+}
+footer a:nth-child(2) svg{
+  fill: #46b;
+}
+footer a:last-child svg{
+  fill: red;
+}
+
+footer .btn-to-top{
+  font-size: 1rem;
+  font-style: italic;
+}
+footer .btn-to-top:hover{
+  text-decoration: underline;
 }
