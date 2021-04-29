@@ -123,7 +123,6 @@ nav img{
 /* work */
 .work-aspect{
     display: grid;
-    max-width: 100vw;
     grid-template-columns: repeat(6, 1fr);
 }
 .work-aspect img:not(.icon){
@@ -142,14 +141,12 @@ nav img{
 .text-container{
     padding-top: 3em;
     grid-column: span 2;
-    justify-content: space-between;
 }
 .text-container .text{
     padding: 1em 3em 2em 3em;
 }
 .text-container hr{
     width: 20%;
-    border-radius: 5px;
     margin-bottom: 2em;
 }
 .text-container .square {
@@ -158,9 +155,6 @@ nav img{
 
     background-color: #fff;
     transform: translateY(50%) rotate(45deg);
-}
-.text-container img{
-  height: auto;
 }
 
 
